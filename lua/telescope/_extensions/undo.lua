@@ -7,8 +7,8 @@ end
 local config = {
   use_delta = true,
   use_custom_command = nil, -- should be in this format: { "bash", "-c", "echo '$DIFF' | delta" }
-  side_by_side = false,
-  diff_context_lines = vim.o.scrolloff,
+  side_by_side = true,
+  diff_context_lines = 0,
   entry_format = "state #$ID, $STAT, $TIME",
   mappings = {
     i = {
