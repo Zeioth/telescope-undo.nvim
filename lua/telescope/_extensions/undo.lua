@@ -9,6 +9,10 @@ local config = {
   use_custom_command = nil, -- should be in this format: { "bash", "-c", "echo '$DIFF' | delta" }
   side_by_side = true,
   diff_context_lines = 0,
+  layout_strategy = "horizontal",
+  layout_config = {
+    preview_width = 0.70,
+  },
   entry_format = "state #$ID, $STAT, $TIME",
   mappings = {
     i = {
